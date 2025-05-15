@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "UmTfGbupy9jvMty1BgLe3F8FFtwS8kWMJP2FMsfHv94=",
+  "Source": "EventServiceProvider",
+  "BasePath": "_content/EventServiceProvider",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
