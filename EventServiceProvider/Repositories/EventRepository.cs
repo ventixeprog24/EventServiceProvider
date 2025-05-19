@@ -4,43 +4,13 @@ using Microsoft.EntityFrameworkCore.Query.Internal;
 using System.ComponentModel;
 using System.Linq.Expressions;
 
-namespace EventServiceProvider.Repository;
+namespace EventServiceProvider.Repositories;
 
-public class EventRepository(EventDbContext context)
+public interface IEventRepository : IBaseRepository<EventEntity>
 {
-    private readonly EventDbContext _context = context;
-
-    public async Task<IEnumerable<EventEntity>> GetAllEventsAsync()
-    {        
-        var events = await _context.Events.ToListAsync();
-        if (events != null)
-        {
-            return events;
-
-        }
-        return null!;
-    }
-    public async Task<EventEntity> GetEventByIdAsync(string id)
-    {
-        var eventEntity = await _context.Events.FirstOrDefaultAsync(e => e.EventId == id);
-
-        if (eventEntity != null)
-        {
-            return eventEntity;
-        }
-        return null!;
-    }
-
-    public async Task<bool> CreateEventAsync(EventEntity eventEntity)
-    {
-        if (eventEntity == null)
-        {
-            return false;
-        }
-        _context.Events.Add(eventEntity);
-        await _context.SaveChangesAsync();
-        return true;
-    }
+}
+public class EventRepository(EventDbContext context) : BaseRepository<EventEntity>(context),IEventRepository 
+{
 
 
 }

@@ -22,16 +22,27 @@ namespace EventServiceProvider.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("EventServiceProvider.Data.CategoryEntity", b =>
+                {
+                    b.Property<string>("CategoryId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("CategoryName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("CategoryId");
+
+                    b.ToTable("Categories");
+                });
+
             modelBuilder.Entity("EventServiceProvider.Data.EventEntity", b =>
                 {
                     b.Property<string>("EventId")
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<string>("BookingStatus")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Category")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<string>("CategoryId")
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<DateTime?>("Date")
                         .HasColumnType("datetime2");
@@ -47,18 +58,54 @@ namespace EventServiceProvider.Migrations
                     b.Property<string>("LocationId")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Price")
+                    b.Property<int?>("Price")
                         .HasColumnType("int");
+
+                    b.Property<string>("StatusId")
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<int>("TicketsSold")
                         .HasColumnType("int");
 
-                    b.Property<int>("TotalTickets")
+                    b.Property<int?>("TotalTickets")
                         .HasColumnType("int");
 
                     b.HasKey("EventId");
 
+                    b.HasIndex("CategoryId");
+
+                    b.HasIndex("StatusId");
+
                     b.ToTable("Events");
+                });
+
+            modelBuilder.Entity("EventServiceProvider.Data.StatusEntity", b =>
+                {
+                    b.Property<string>("StatusId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("StatusName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("StatusId");
+
+                    b.ToTable("Statuses");
+                });
+
+            modelBuilder.Entity("EventServiceProvider.Data.EventEntity", b =>
+                {
+                    b.HasOne("EventServiceProvider.Data.CategoryEntity", "Category")
+                        .WithMany()
+                        .HasForeignKey("CategoryId");
+
+                    b.HasOne("EventServiceProvider.Data.StatusEntity", "BookingStatus")
+                        .WithMany()
+                        .HasForeignKey("StatusId");
+
+                    b.Navigation("BookingStatus");
+
+                    b.Navigation("Category");
                 });
 #pragma warning restore 612, 618
         }

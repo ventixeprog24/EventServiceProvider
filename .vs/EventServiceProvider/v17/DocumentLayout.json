@@ -3,24 +3,95 @@
   "WorkspaceRootPath": "C:\\Users\\adamr\\code\\Ventixe\\EventServiceProvider\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{34169B05-0FAC-431F-99E0-FB9D6E8E08F4}|EventServiceProvider\\EventServiceProvider.csproj|c:\\users\\adamr\\code\\ventixe\\eventserviceprovider\\eventserviceprovider\\services\\statusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34169B05-0FAC-431F-99E0-FB9D6E8E08F4}|EventServiceProvider\\EventServiceProvider.csproj|solutionrelative:eventserviceprovider\\services\\statusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34169B05-0FAC-431F-99E0-FB9D6E8E08F4}|EventServiceProvider\\EventServiceProvider.csproj|c:\\users\\adamr\\code\\ventixe\\eventserviceprovider\\eventserviceprovider\\services\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34169B05-0FAC-431F-99E0-FB9D6E8E08F4}|EventServiceProvider\\EventServiceProvider.csproj|solutionrelative:eventserviceprovider\\services\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34169B05-0FAC-431F-99E0-FB9D6E8E08F4}|EventServiceProvider\\EventServiceProvider.csproj|c:\\users\\adamr\\code\\ventixe\\eventserviceprovider\\eventserviceprovider\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34169B05-0FAC-431F-99E0-FB9D6E8E08F4}|EventServiceProvider\\EventServiceProvider.csproj|solutionrelative:eventserviceprovider\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34169B05-0FAC-431F-99E0-FB9D6E8E08F4}|EventServiceProvider\\EventServiceProvider.csproj|c:\\users\\adamr\\code\\ventixe\\eventserviceprovider\\eventserviceprovider\\repositories\\statusrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34169B05-0FAC-431F-99E0-FB9D6E8E08F4}|EventServiceProvider\\EventServiceProvider.csproj|solutionrelative:eventserviceprovider\\repositories\\statusrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34169B05-0FAC-431F-99E0-FB9D6E8E08F4}|EventServiceProvider\\EventServiceProvider.csproj|c:\\users\\adamr\\code\\ventixe\\eventserviceprovider\\eventserviceprovider\\repositories\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34169B05-0FAC-431F-99E0-FB9D6E8E08F4}|EventServiceProvider\\EventServiceProvider.csproj|solutionrelative:eventserviceprovider\\repositories\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{34169B05-0FAC-431F-99E0-FB9D6E8E08F4}|EventServiceProvider\\EventServiceProvider.csproj|c:\\users\\adamr\\code\\ventixe\\eventserviceprovider\\eventserviceprovider\\services\\eventservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{34169B05-0FAC-431F-99E0-FB9D6E8E08F4}|EventServiceProvider\\EventServiceProvider.csproj|solutionrelative:eventserviceprovider\\services\\eventservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34169B05-0FAC-431F-99E0-FB9D6E8E08F4}|EventServiceProvider\\EventServiceProvider.csproj|c:\\users\\adamr\\code\\ventixe\\eventserviceprovider\\eventserviceprovider\\handlers\\cachehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34169B05-0FAC-431F-99E0-FB9D6E8E08F4}|EventServiceProvider\\EventServiceProvider.csproj|solutionrelative:eventserviceprovider\\handlers\\cachehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34169B05-0FAC-431F-99E0-FB9D6E8E08F4}|EventServiceProvider\\EventServiceProvider.csproj|c:\\users\\adamr\\code\\ventixe\\eventserviceprovider\\eventserviceprovider\\repositories\\eventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34169B05-0FAC-431F-99E0-FB9D6E8E08F4}|EventServiceProvider\\EventServiceProvider.csproj|solutionrelative:eventserviceprovider\\repositories\\eventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34169B05-0FAC-431F-99E0-FB9D6E8E08F4}|EventServiceProvider\\EventServiceProvider.csproj|c:\\users\\adamr\\code\\ventixe\\eventserviceprovider\\eventserviceprovider\\repositories\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34169B05-0FAC-431F-99E0-FB9D6E8E08F4}|EventServiceProvider\\EventServiceProvider.csproj|solutionrelative:eventserviceprovider\\repositories\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34169B05-0FAC-431F-99E0-FB9D6E8E08F4}|EventServiceProvider\\EventServiceProvider.csproj|c:\\users\\adamr\\code\\ventixe\\eventserviceprovider\\eventserviceprovider\\data\\eventdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34169B05-0FAC-431F-99E0-FB9D6E8E08F4}|EventServiceProvider\\EventServiceProvider.csproj|solutionrelative:eventserviceprovider\\data\\eventdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{34169B05-0FAC-431F-99E0-FB9D6E8E08F4}|EventServiceProvider\\EventServiceProvider.csproj|c:\\users\\adamr\\code\\ventixe\\eventserviceprovider\\eventserviceprovider\\mappers\\eventmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{34169B05-0FAC-431F-99E0-FB9D6E8E08F4}|EventServiceProvider\\EventServiceProvider.csproj|solutionrelative:eventserviceprovider\\mappers\\eventmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{34169B05-0FAC-431F-99E0-FB9D6E8E08F4}|EventServiceProvider\\EventServiceProvider.csproj|c:\\users\\adamr\\code\\ventixe\\eventserviceprovider\\eventserviceprovider\\data\\evententity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{34169B05-0FAC-431F-99E0-FB9D6E8E08F4}|EventServiceProvider\\EventServiceProvider.csproj|solutionrelative:eventserviceprovider\\data\\evententity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{34169B05-0FAC-431F-99E0-FB9D6E8E08F4}|EventServiceProvider\\EventServiceProvider.csproj|c:\\users\\adamr\\code\\ventixe\\eventserviceprovider\\eventserviceprovider\\protos\\event.proto||{3B902123-F8A7-4915-9F01-361F908088D0}",
       "RelativeMoniker": "D:0:0:{34169B05-0FAC-431F-99E0-FB9D6E8E08F4}|EventServiceProvider\\EventServiceProvider.csproj|solutionrelative:eventserviceprovider\\protos\\event.proto||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{34169B05-0FAC-431F-99E0-FB9D6E8E08F4}|EventServiceProvider\\EventServiceProvider.csproj|c:\\users\\adamr\\code\\ventixe\\eventserviceprovider\\eventserviceprovider\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{34169B05-0FAC-431F-99E0-FB9D6E8E08F4}|EventServiceProvider\\EventServiceProvider.csproj|solutionrelative:eventserviceprovider\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{34169B05-0FAC-431F-99E0-FB9D6E8E08F4}|EventServiceProvider\\EventServiceProvider.csproj|c:\\users\\adamr\\code\\ventixe\\eventserviceprovider\\eventserviceprovider\\factories\\eventfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34169B05-0FAC-431F-99E0-FB9D6E8E08F4}|EventServiceProvider\\EventServiceProvider.csproj|solutionrelative:eventserviceprovider\\factories\\eventfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34169B05-0FAC-431F-99E0-FB9D6E8E08F4}|EventServiceProvider\\EventServiceProvider.csproj|c:\\users\\adamr\\code\\ventixe\\eventserviceprovider\\eventserviceprovider\\data\\evententity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34169B05-0FAC-431F-99E0-FB9D6E8E08F4}|EventServiceProvider\\EventServiceProvider.csproj|solutionrelative:eventserviceprovider\\data\\evententity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\adamr\\code\\Ventixe\\EventServiceProvider\\EventServiceProvider\\obj\\Debug\\net9.0\\Protos\\Event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EventServiceProvider\\obj\\Debug\\net9.0\\Protos\\Event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34169B05-0FAC-431F-99E0-FB9D6E8E08F4}|EventServiceProvider\\EventServiceProvider.csproj|c:\\users\\adamr\\code\\ventixe\\eventserviceprovider\\eventserviceprovider\\data\\statusentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34169B05-0FAC-431F-99E0-FB9D6E8E08F4}|EventServiceProvider\\EventServiceProvider.csproj|solutionrelative:eventserviceprovider\\data\\statusentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34169B05-0FAC-431F-99E0-FB9D6E8E08F4}|EventServiceProvider\\EventServiceProvider.csproj|c:\\users\\adamr\\code\\ventixe\\eventserviceprovider\\eventserviceprovider\\data\\categoryentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34169B05-0FAC-431F-99E0-FB9D6E8E08F4}|EventServiceProvider\\EventServiceProvider.csproj|solutionrelative:eventserviceprovider\\data\\categoryentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34169B05-0FAC-431F-99E0-FB9D6E8E08F4}|EventServiceProvider\\EventServiceProvider.csproj|c:\\users\\adamr\\code\\ventixe\\eventserviceprovider\\eventserviceprovider\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{34169B05-0FAC-431F-99E0-FB9D6E8E08F4}|EventServiceProvider\\EventServiceProvider.csproj|solutionrelative:eventserviceprovider\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34169B05-0FAC-431F-99E0-FB9D6E8E08F4}|EventServiceProvider\\EventServiceProvider.csproj|c:\\users\\adamr\\code\\ventixe\\eventserviceprovider\\eventserviceprovider\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{34169B05-0FAC-431F-99E0-FB9D6E8E08F4}|EventServiceProvider\\EventServiceProvider.csproj|solutionrelative:eventserviceprovider\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34169B05-0FAC-431F-99E0-FB9D6E8E08F4}|EventServiceProvider\\EventServiceProvider.csproj|c:\\users\\adamr\\code\\ventixe\\eventserviceprovider\\eventserviceprovider\\eventserviceprovider.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{34169B05-0FAC-431F-99E0-FB9D6E8E08F4}|EventServiceProvider\\EventServiceProvider.csproj|solutionrelative:eventserviceprovider\\eventserviceprovider.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_ADAMR_CODE_VENTIXE_EVENTSERVICEPROVIDER_EVENTSERVICEPROVIDER_DATA_EVENT_DATABASE.MDF/True/SqlTable/dbo.Events.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34169B05-0FAC-431F-99E0-FB9D6E8E08F4}|EventServiceProvider\\EventServiceProvider.csproj|c:\\users\\adamr\\code\\ventixe\\eventserviceprovider\\eventserviceprovider\\migrations\\20250516083744_addedentities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34169B05-0FAC-431F-99E0-FB9D6E8E08F4}|EventServiceProvider\\EventServiceProvider.csproj|solutionrelative:eventserviceprovider\\migrations\\20250516083744_addedentities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34169B05-0FAC-431F-99E0-FB9D6E8E08F4}|EventServiceProvider\\EventServiceProvider.csproj|c:\\users\\adamr\\code\\ventixe\\eventserviceprovider\\eventserviceprovider\\migrations\\20250516091340_fix.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34169B05-0FAC-431F-99E0-FB9D6E8E08F4}|EventServiceProvider\\EventServiceProvider.csproj|solutionrelative:eventserviceprovider\\migrations\\20250516091340_fix.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +101,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -70,68 +141,297 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "EventMapper.cs",
-              "DocumentMoniker": "C:\\Users\\adamr\\code\\Ventixe\\EventServiceProvider\\EventServiceProvider\\Mappers\\EventMapper.cs",
-              "RelativeDocumentMoniker": "EventServiceProvider\\Mappers\\EventMapper.cs",
-              "ToolTip": "C:\\Users\\adamr\\code\\Ventixe\\EventServiceProvider\\EventServiceProvider\\Mappers\\EventMapper.cs",
-              "RelativeToolTip": "EventServiceProvider\\Mappers\\EventMapper.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAqwBgAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "StatusService.cs",
+              "DocumentMoniker": "C:\\Users\\adamr\\code\\Ventixe\\EventServiceProvider\\EventServiceProvider\\Services\\StatusService.cs",
+              "RelativeDocumentMoniker": "EventServiceProvider\\Services\\StatusService.cs",
+              "ToolTip": "C:\\Users\\adamr\\code\\Ventixe\\EventServiceProvider\\EventServiceProvider\\Services\\StatusService.cs",
+              "RelativeToolTip": "EventServiceProvider\\Services\\StatusService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-15T06:37:37.579Z",
+              "WhenOpened": "2025-05-19T08:25:28.559Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "CategoryService.cs",
+              "DocumentMoniker": "C:\\Users\\adamr\\code\\Ventixe\\EventServiceProvider\\EventServiceProvider\\Services\\CategoryService.cs",
+              "RelativeDocumentMoniker": "EventServiceProvider\\Services\\CategoryService.cs",
+              "ToolTip": "C:\\Users\\adamr\\code\\Ventixe\\EventServiceProvider\\EventServiceProvider\\Services\\CategoryService.cs",
+              "RelativeToolTip": "EventServiceProvider\\Services\\CategoryService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T08:25:14.001Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BaseRepository.cs",
+              "DocumentMoniker": "C:\\Users\\adamr\\code\\Ventixe\\EventServiceProvider\\EventServiceProvider\\Repositories\\BaseRepository.cs",
+              "RelativeDocumentMoniker": "EventServiceProvider\\Repositories\\BaseRepository.cs",
+              "ToolTip": "C:\\Users\\adamr\\code\\Ventixe\\EventServiceProvider\\EventServiceProvider\\Repositories\\BaseRepository.cs",
+              "RelativeToolTip": "EventServiceProvider\\Repositories\\BaseRepository.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAA5wBoAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T13:47:54.116Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CacheHandler.cs",
+              "DocumentMoniker": "C:\\Users\\adamr\\code\\Ventixe\\EventServiceProvider\\EventServiceProvider\\Handlers\\CacheHandler.cs",
+              "RelativeDocumentMoniker": "EventServiceProvider\\Handlers\\CacheHandler.cs",
+              "ToolTip": "C:\\Users\\adamr\\code\\Ventixe\\EventServiceProvider\\EventServiceProvider\\Handlers\\CacheHandler.cs",
+              "RelativeToolTip": "EventServiceProvider\\Handlers\\CacheHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T20:05:07.45Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "EventService.cs",
               "DocumentMoniker": "C:\\Users\\adamr\\code\\Ventixe\\EventServiceProvider\\EventServiceProvider\\Services\\EventService.cs",
               "RelativeDocumentMoniker": "EventServiceProvider\\Services\\EventService.cs",
               "ToolTip": "C:\\Users\\adamr\\code\\Ventixe\\EventServiceProvider\\EventServiceProvider\\Services\\EventService.cs",
               "RelativeToolTip": "EventServiceProvider\\Services\\EventService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABPAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-14T08:46:40.831Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\adamr\\code\\Ventixe\\EventServiceProvider\\EventServiceProvider\\Program.cs",
               "RelativeDocumentMoniker": "EventServiceProvider\\Program.cs",
               "ToolTip": "C:\\Users\\adamr\\code\\Ventixe\\EventServiceProvider\\EventServiceProvider\\Program.cs",
               "RelativeToolTip": "EventServiceProvider\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-12T17:35:39.924Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CategoryRepository.cs",
+              "DocumentMoniker": "C:\\Users\\adamr\\code\\Ventixe\\EventServiceProvider\\EventServiceProvider\\Repositories\\CategoryRepository.cs",
+              "RelativeDocumentMoniker": "EventServiceProvider\\Repositories\\CategoryRepository.cs",
+              "ToolTip": "C:\\Users\\adamr\\code\\Ventixe\\EventServiceProvider\\EventServiceProvider\\Repositories\\CategoryRepository.cs",
+              "RelativeToolTip": "EventServiceProvider\\Repositories\\CategoryRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T14:19:19.51Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "StatusRepository.cs",
+              "DocumentMoniker": "C:\\Users\\adamr\\code\\Ventixe\\EventServiceProvider\\EventServiceProvider\\Repositories\\StatusRepository.cs",
+              "RelativeDocumentMoniker": "EventServiceProvider\\Repositories\\StatusRepository.cs",
+              "ToolTip": "C:\\Users\\adamr\\code\\Ventixe\\EventServiceProvider\\EventServiceProvider\\Repositories\\StatusRepository.cs",
+              "RelativeToolTip": "EventServiceProvider\\Repositories\\StatusRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T14:18:53.892Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EventRepository.cs",
+              "DocumentMoniker": "C:\\Users\\adamr\\code\\Ventixe\\EventServiceProvider\\EventServiceProvider\\Repositories\\EventRepository.cs",
+              "RelativeDocumentMoniker": "EventServiceProvider\\Repositories\\EventRepository.cs",
+              "ToolTip": "C:\\Users\\adamr\\code\\Ventixe\\EventServiceProvider\\EventServiceProvider\\Repositories\\EventRepository.cs",
+              "RelativeToolTip": "EventServiceProvider\\Repositories\\EventRepository.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAAAsAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T09:38:51.608Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "EventDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\adamr\\code\\Ventixe\\EventServiceProvider\\EventServiceProvider\\Data\\EventDbContext.cs",
+              "RelativeDocumentMoniker": "EventServiceProvider\\Data\\EventDbContext.cs",
+              "ToolTip": "C:\\Users\\adamr\\code\\Ventixe\\EventServiceProvider\\EventServiceProvider\\Data\\EventDbContext.cs",
+              "RelativeToolTip": "EventServiceProvider\\Data\\EventDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T08:33:46.608Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "EventMapper.cs",
+              "DocumentMoniker": "C:\\Users\\adamr\\code\\Ventixe\\EventServiceProvider\\EventServiceProvider\\Mappers\\EventMapper.cs",
+              "RelativeDocumentMoniker": "EventServiceProvider\\Mappers\\EventMapper.cs",
+              "ToolTip": "C:\\Users\\adamr\\code\\Ventixe\\EventServiceProvider\\EventServiceProvider\\Mappers\\EventMapper.cs",
+              "RelativeToolTip": "EventServiceProvider\\Mappers\\EventMapper.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAADwvx8AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T06:37:37.579Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "event.proto",
               "DocumentMoniker": "C:\\Users\\adamr\\code\\Ventixe\\EventServiceProvider\\EventServiceProvider\\Protos\\event.proto",
               "RelativeDocumentMoniker": "EventServiceProvider\\Protos\\event.proto",
               "ToolTip": "C:\\Users\\adamr\\code\\Ventixe\\EventServiceProvider\\EventServiceProvider\\Protos\\event.proto",
               "RelativeToolTip": "EventServiceProvider\\Protos\\event.proto",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003853|",
               "WhenOpened": "2025-05-12T18:47:12.667Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 13,
               "Title": "EventEntity.cs",
               "DocumentMoniker": "C:\\Users\\adamr\\code\\Ventixe\\EventServiceProvider\\EventServiceProvider\\Data\\EventEntity.cs",
               "RelativeDocumentMoniker": "EventServiceProvider\\Data\\EventEntity.cs",
               "ToolTip": "C:\\Users\\adamr\\code\\Ventixe\\EventServiceProvider\\EventServiceProvider\\Data\\EventEntity.cs",
               "RelativeToolTip": "EventServiceProvider\\Data\\EventEntity.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-14T08:23:40.963Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "EventFactory.cs",
+              "DocumentMoniker": "C:\\Users\\adamr\\code\\Ventixe\\EventServiceProvider\\EventServiceProvider\\Factories\\EventFactory.cs",
+              "RelativeDocumentMoniker": "EventServiceProvider\\Factories\\EventFactory.cs",
+              "ToolTip": "C:\\Users\\adamr\\code\\Ventixe\\EventServiceProvider\\EventServiceProvider\\Factories\\EventFactory.cs",
+              "RelativeToolTip": "EventServiceProvider\\Factories\\EventFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T18:28:19.038Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Event.cs",
+              "DocumentMoniker": "C:\\Users\\adamr\\code\\Ventixe\\EventServiceProvider\\EventServiceProvider\\obj\\Debug\\net9.0\\Protos\\Event.cs",
+              "RelativeDocumentMoniker": "EventServiceProvider\\obj\\Debug\\net9.0\\Protos\\Event.cs",
+              "ToolTip": "C:\\Users\\adamr\\code\\Ventixe\\EventServiceProvider\\EventServiceProvider\\obj\\Debug\\net9.0\\Protos\\Event.cs",
+              "RelativeToolTip": "EventServiceProvider\\obj\\Debug\\net9.0\\Protos\\Event.cs",
+              "ViewState": "AgIAAF0CAAAAAAAAAAA/wG4CAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T17:30:12.724Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "StatusEntity.cs",
+              "DocumentMoniker": "C:\\Users\\adamr\\code\\Ventixe\\EventServiceProvider\\EventServiceProvider\\Data\\StatusEntity.cs",
+              "RelativeDocumentMoniker": "EventServiceProvider\\Data\\StatusEntity.cs",
+              "ToolTip": "C:\\Users\\adamr\\code\\Ventixe\\EventServiceProvider\\EventServiceProvider\\Data\\StatusEntity.cs",
+              "RelativeToolTip": "EventServiceProvider\\Data\\StatusEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T08:20:23.247Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CategoryEntity.cs",
+              "DocumentMoniker": "C:\\Users\\adamr\\code\\Ventixe\\EventServiceProvider\\EventServiceProvider\\Data\\CategoryEntity.cs",
+              "RelativeDocumentMoniker": "EventServiceProvider\\Data\\CategoryEntity.cs",
+              "ToolTip": "C:\\Users\\adamr\\code\\Ventixe\\EventServiceProvider\\EventServiceProvider\\Data\\CategoryEntity.cs",
+              "RelativeToolTip": "EventServiceProvider\\Data\\CategoryEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T08:20:15.194Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "20250516091340_Fix.cs",
+              "DocumentMoniker": "C:\\Users\\adamr\\code\\Ventixe\\EventServiceProvider\\EventServiceProvider\\Migrations\\20250516091340_Fix.cs",
+              "RelativeDocumentMoniker": "EventServiceProvider\\Migrations\\20250516091340_Fix.cs",
+              "ToolTip": "C:\\Users\\adamr\\code\\Ventixe\\EventServiceProvider\\EventServiceProvider\\Migrations\\20250516091340_Fix.cs",
+              "RelativeToolTip": "EventServiceProvider\\Migrations\\20250516091340_Fix.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T09:13:40.307Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "20250516083744_AddedEntities.cs",
+              "DocumentMoniker": "C:\\Users\\adamr\\code\\Ventixe\\EventServiceProvider\\EventServiceProvider\\Migrations\\20250516083744_AddedEntities.cs",
+              "RelativeDocumentMoniker": "EventServiceProvider\\Migrations\\20250516083744_AddedEntities.cs",
+              "ToolTip": "C:\\Users\\adamr\\code\\Ventixe\\EventServiceProvider\\EventServiceProvider\\Migrations\\20250516083744_AddedEntities.cs",
+              "RelativeToolTip": "EventServiceProvider\\Migrations\\20250516083744_AddedEntities.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T08:37:44.523Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\adamr\\code\\Ventixe\\EventServiceProvider\\EventServiceProvider\\appsettings.json",
+              "RelativeDocumentMoniker": "EventServiceProvider\\appsettings.json",
+              "ToolTip": "C:\\Users\\adamr\\code\\Ventixe\\EventServiceProvider\\EventServiceProvider\\appsettings.json",
+              "RelativeToolTip": "EventServiceProvider\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAADEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-15T10:14:41.319Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\adamr\\code\\Ventixe\\EventServiceProvider\\EventServiceProvider\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "EventServiceProvider\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\adamr\\code\\Ventixe\\EventServiceProvider\\EventServiceProvider\\Properties\\launchSettings.json",
+              "RelativeToolTip": "EventServiceProvider\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-15T10:06:09.888Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "EventServiceProvider.csproj",
+              "DocumentMoniker": "C:\\Users\\adamr\\code\\Ventixe\\EventServiceProvider\\EventServiceProvider\\EventServiceProvider.csproj",
+              "RelativeDocumentMoniker": "EventServiceProvider\\EventServiceProvider.csproj",
+              "ToolTip": "C:\\Users\\adamr\\code\\Ventixe\\EventServiceProvider\\EventServiceProvider\\EventServiceProvider.csproj",
+              "RelativeToolTip": "EventServiceProvider\\EventServiceProvider.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-15T10:02:34.65Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "dbo.Events [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_ADAMR_CODE_VENTIXE_EVENTSERVICEPROVIDER_EVENTSERVICEPROVIDER_DATA_EVENT_DATABASE.MDF/True/SqlTable/dbo.Events.sql",
+              "ToolTip": "dbo.Events [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-05-15T09:39:57.433Z"
             }
           ]
         },

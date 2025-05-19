@@ -25,38 +25,39 @@ namespace EventServiceProvider {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "ChJQcm90b3MvZXZlbnQucHJvdG8SBWV2ZW50Gh9nb29nbGUvcHJvdG9idWYv",
-            "dGltZXN0YW1wLnByb3RvIiMKEEdldEV2ZW50c1JlcXVlc3QSDwoHRXZlbnRJ",
-            "ZBgBIAEoCSIsChlHZXRFdmVudHNCeUV2ZW50SWRSZXF1ZXN0Eg8KB0V2ZW50",
-            "SWQYASABKAki7AEKD0FkZEV2ZW50UmVxdWVzdBIPCgdFdmVudElkGAEgASgJ",
-            "EhIKCkV2ZW50VGl0bGUYAiABKAkSEwoLRGVzY3JpcHRpb24YAyABKAkSKAoE",
-            "RGF0ZRgEIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASDQoFUHJp",
-            "Y2UYBSABKAUSFQoNQm9va2luZ1N0YXR1cxgGIAEoCRIQCghDYXRlZ29yeRgH",
-            "IAEoCRISCgpMb2NhdGlvbklkGAggASgJEhQKDFRvdGFsVGlja2V0cxgJIAEo",
-            "BRITCgtUaWNrZXRzU29sZBgKIAEoBSLiAQoFRXZlbnQSDwoHRXZlbnRJZBgB",
-            "IAEoCRISCgpFdmVudFRpdGxlGAIgASgJEhMKC0Rlc2NyaXB0aW9uGAMgASgJ",
-            "EigKBERhdGUYBCABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wEg0K",
-            "BVByaWNlGAUgASgFEhUKDUJvb2tpbmdTdGF0dXMYBiABKAkSEAoIQ2F0ZWdv",
-            "cnkYByABKAkSEgoKTG9jYXRpb25JZBgIIAEoCRIUCgxUb3RhbFRpY2tldHMY",
-            "CSABKAUSEwoLVGlja2V0c1NvbGQYCiABKAUiLgoOR2V0RXZlbnRzUmVwbHkS",
-            "HAoGZXZlbnRzGAEgAygLMgwuZXZlbnQuRXZlbnQiLQoNR2V0RXZlbnRSZXBs",
-            "eRIcCgZldmVudHMYASABKAsyDC5ldmVudC5FdmVudCI1Cg1BZGRFdmVudFJl",
-            "cGx5EhMKC3N0YXR1c19jb2RlGAEgASgFEg8KB21lc3NhZ2UYAiABKAky1QEK",
-            "DUV2ZW50Q29udHJhY3QSOwoJR2V0RXZlbnRzEhcuZXZlbnQuR2V0RXZlbnRz",
-            "UmVxdWVzdBoVLmV2ZW50LkdldEV2ZW50c1JlcGx5Ek0KEkdldEV2ZW50c0J5",
-            "RXZlbnRJZBIgLmV2ZW50LkdldEV2ZW50c0J5RXZlbnRJZFJlcXVlc3QaFS5l",
-            "dmVudC5HZXRFdmVudHNSZXBseRI4CghBZGRFdmVudBIWLmV2ZW50LkFkZEV2",
-            "ZW50UmVxdWVzdBoULmV2ZW50LkFkZEV2ZW50UmVwbHlCF6oCFEV2ZW50U2Vy",
-            "dmljZVByb3ZpZGVyYgZwcm90bzM="));
+            "dGltZXN0YW1wLnByb3RvGhtnb29nbGUvcHJvdG9idWYvZW1wdHkucHJvdG8i",
+            "JgoTR2V0RXZlbnRCeUlkUmVxdWVzdBIPCgdFdmVudElkGAEgASgJIiUKEkRl",
+            "bGV0ZUV2ZW50UmVxdWVzdBIPCgdFdmVudElkGAEgASgJIvsBCgVFdmVudBIP",
+            "CgdFdmVudElkGAEgASgJEhIKCkV2ZW50VGl0bGUYAiABKAkSEwoLRGVzY3Jp",
+            "cHRpb24YAyABKAkSKAoERGF0ZRgEIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5U",
+            "aW1lc3RhbXASDQoFUHJpY2UYBSABKAUSEgoKTG9jYXRpb25JZBgGIAEoCRIU",
+            "CgxUb3RhbFRpY2tldHMYByABKAUSEwoLVGlja2V0c1NvbGQYCCABKAUSHQoG",
+            "U3RhdHVzGAkgASgLMg0uZXZlbnQuU3RhdHVzEiEKCENhdGVnb3J5GAogASgL",
+            "Mg8uZXZlbnQuQ2F0ZWdvcnkiLgoGU3RhdHVzEhAKCFN0YXR1c0lkGAEgASgJ",
+            "EhIKClN0YXR1c05hbWUYAiABKAkiNAoIQ2F0ZWdvcnkSEgoKQ2F0ZWdvcnlJ",
+            "ZBgBIAEoCRIUCgxDYXRlZ29yeU5hbWUYAiABKAkiMQoRR2V0QWxsRXZlbnRz",
+            "UmVwbHkSHAoGRXZlbnRzGAEgAygLMgwuZXZlbnQuRXZlbnQiQQoNR2V0RXZl",
+            "bnRSZXBseRITCgtTdGF0dXNfY29kZRgBIAEoBRIbCgVFdmVudBgCIAEoCzIM",
+            "LmV2ZW50LkV2ZW50IjIKCkV2ZW50UmVwbHkSEwoLU3RhdHVzX2NvZGUYASAB",
+            "KAUSDwoHTWVzc2FnZRgCIAEoCTKqAgoNRXZlbnRDb250cmFjdBI9CglHZXRF",
+            "dmVudHMSFi5nb29nbGUucHJvdG9idWYuRW1wdHkaGC5ldmVudC5HZXRBbGxF",
+            "dmVudHNSZXBseRJACgxHZXRFdmVudEJ5SWQSGi5ldmVudC5HZXRFdmVudEJ5",
+            "SWRSZXF1ZXN0GhQuZXZlbnQuR2V0RXZlbnRSZXBseRIrCghBZGRFdmVudBIM",
+            "LmV2ZW50LkV2ZW50GhEuZXZlbnQuRXZlbnRSZXBseRI7CgtEZWxldGVFdmVu",
+            "dBIZLmV2ZW50LkRlbGV0ZUV2ZW50UmVxdWVzdBoRLmV2ZW50LkV2ZW50UmVw",
+            "bHkSLgoLVXBkYXRlRXZlbnQSDC5ldmVudC5FdmVudBoRLmV2ZW50LkV2ZW50",
+            "UmVwbHlCF6oCFEV2ZW50U2VydmljZVByb3ZpZGVyYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::EventServiceProvider.GetEventsRequest), global::EventServiceProvider.GetEventsRequest.Parser, new[]{ "EventId" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::EventServiceProvider.GetEventsByEventIdRequest), global::EventServiceProvider.GetEventsByEventIdRequest.Parser, new[]{ "EventId" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::EventServiceProvider.AddEventRequest), global::EventServiceProvider.AddEventRequest.Parser, new[]{ "EventId", "EventTitle", "Description", "Date", "Price", "BookingStatus", "Category", "LocationId", "TotalTickets", "TicketsSold" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::EventServiceProvider.Event), global::EventServiceProvider.Event.Parser, new[]{ "EventId", "EventTitle", "Description", "Date", "Price", "BookingStatus", "Category", "LocationId", "TotalTickets", "TicketsSold" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::EventServiceProvider.GetEventsReply), global::EventServiceProvider.GetEventsReply.Parser, new[]{ "Events" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::EventServiceProvider.GetEventReply), global::EventServiceProvider.GetEventReply.Parser, new[]{ "Events" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::EventServiceProvider.AddEventReply), global::EventServiceProvider.AddEventReply.Parser, new[]{ "StatusCode", "Message" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::EventServiceProvider.GetEventByIdRequest), global::EventServiceProvider.GetEventByIdRequest.Parser, new[]{ "EventId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::EventServiceProvider.DeleteEventRequest), global::EventServiceProvider.DeleteEventRequest.Parser, new[]{ "EventId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::EventServiceProvider.Event), global::EventServiceProvider.Event.Parser, new[]{ "EventId", "EventTitle", "Description", "Date", "Price", "LocationId", "TotalTickets", "TicketsSold", "Status", "Category" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::EventServiceProvider.Status), global::EventServiceProvider.Status.Parser, new[]{ "StatusId", "StatusName" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::EventServiceProvider.Category), global::EventServiceProvider.Category.Parser, new[]{ "CategoryId", "CategoryName" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::EventServiceProvider.GetAllEventsReply), global::EventServiceProvider.GetAllEventsReply.Parser, new[]{ "Events" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::EventServiceProvider.GetEventReply), global::EventServiceProvider.GetEventReply.Parser, new[]{ "StatusCode", "Event" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::EventServiceProvider.EventReply), global::EventServiceProvider.EventReply.Parser, new[]{ "StatusCode", "Message" }, null, null, null, null)
           }));
     }
     #endregion
@@ -64,16 +65,16 @@ namespace EventServiceProvider {
   }
   #region Messages
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
-  public sealed partial class GetEventsRequest : pb::IMessage<GetEventsRequest>
+  public sealed partial class GetEventByIdRequest : pb::IMessage<GetEventByIdRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<GetEventsRequest> _parser = new pb::MessageParser<GetEventsRequest>(() => new GetEventsRequest());
+    private static readonly pb::MessageParser<GetEventByIdRequest> _parser = new pb::MessageParser<GetEventByIdRequest>(() => new GetEventByIdRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<GetEventsRequest> Parser { get { return _parser; } }
+    public static pb::MessageParser<GetEventByIdRequest> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -89,7 +90,7 @@ namespace EventServiceProvider {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public GetEventsRequest() {
+    public GetEventByIdRequest() {
       OnConstruction();
     }
 
@@ -97,15 +98,15 @@ namespace EventServiceProvider {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public GetEventsRequest(GetEventsRequest other) : this() {
+    public GetEventByIdRequest(GetEventByIdRequest other) : this() {
       eventId_ = other.eventId_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public GetEventsRequest Clone() {
-      return new GetEventsRequest(this);
+    public GetEventByIdRequest Clone() {
+      return new GetEventByIdRequest(this);
     }
 
     /// <summary>Field number for the "EventId" field.</summary>
@@ -123,12 +124,12 @@ namespace EventServiceProvider {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
-      return Equals(other as GetEventsRequest);
+      return Equals(other as GetEventByIdRequest);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(GetEventsRequest other) {
+    public bool Equals(GetEventByIdRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -201,7 +202,7 @@ namespace EventServiceProvider {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(GetEventsRequest other) {
+    public void MergeFrom(GetEventByIdRequest other) {
       if (other == null) {
         return;
       }
@@ -262,16 +263,16 @@ namespace EventServiceProvider {
   }
 
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
-  public sealed partial class GetEventsByEventIdRequest : pb::IMessage<GetEventsByEventIdRequest>
+  public sealed partial class DeleteEventRequest : pb::IMessage<DeleteEventRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<GetEventsByEventIdRequest> _parser = new pb::MessageParser<GetEventsByEventIdRequest>(() => new GetEventsByEventIdRequest());
+    private static readonly pb::MessageParser<DeleteEventRequest> _parser = new pb::MessageParser<DeleteEventRequest>(() => new DeleteEventRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<GetEventsByEventIdRequest> Parser { get { return _parser; } }
+    public static pb::MessageParser<DeleteEventRequest> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -287,7 +288,7 @@ namespace EventServiceProvider {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public GetEventsByEventIdRequest() {
+    public DeleteEventRequest() {
       OnConstruction();
     }
 
@@ -295,15 +296,15 @@ namespace EventServiceProvider {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public GetEventsByEventIdRequest(GetEventsByEventIdRequest other) : this() {
+    public DeleteEventRequest(DeleteEventRequest other) : this() {
       eventId_ = other.eventId_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public GetEventsByEventIdRequest Clone() {
-      return new GetEventsByEventIdRequest(this);
+    public DeleteEventRequest Clone() {
+      return new DeleteEventRequest(this);
     }
 
     /// <summary>Field number for the "EventId" field.</summary>
@@ -321,12 +322,12 @@ namespace EventServiceProvider {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
-      return Equals(other as GetEventsByEventIdRequest);
+      return Equals(other as DeleteEventRequest);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(GetEventsByEventIdRequest other) {
+    public bool Equals(DeleteEventRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -399,7 +400,7 @@ namespace EventServiceProvider {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(GetEventsByEventIdRequest other) {
+    public void MergeFrom(DeleteEventRequest other) {
       if (other == null) {
         return;
       }
@@ -450,546 +451,6 @@ namespace EventServiceProvider {
             break;
           case 10: {
             EventId = input.ReadString();
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-  }
-
-  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
-  public sealed partial class AddEventRequest : pb::IMessage<AddEventRequest>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<AddEventRequest> _parser = new pb::MessageParser<AddEventRequest>(() => new AddEventRequest());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<AddEventRequest> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::EventServiceProvider.EventReflection.Descriptor.MessageTypes[2]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public AddEventRequest() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public AddEventRequest(AddEventRequest other) : this() {
-      eventId_ = other.eventId_;
-      eventTitle_ = other.eventTitle_;
-      description_ = other.description_;
-      date_ = other.date_ != null ? other.date_.Clone() : null;
-      price_ = other.price_;
-      bookingStatus_ = other.bookingStatus_;
-      category_ = other.category_;
-      locationId_ = other.locationId_;
-      totalTickets_ = other.totalTickets_;
-      ticketsSold_ = other.ticketsSold_;
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public AddEventRequest Clone() {
-      return new AddEventRequest(this);
-    }
-
-    /// <summary>Field number for the "EventId" field.</summary>
-    public const int EventIdFieldNumber = 1;
-    private string eventId_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string EventId {
-      get { return eventId_; }
-      set {
-        eventId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "EventTitle" field.</summary>
-    public const int EventTitleFieldNumber = 2;
-    private string eventTitle_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string EventTitle {
-      get { return eventTitle_; }
-      set {
-        eventTitle_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "Description" field.</summary>
-    public const int DescriptionFieldNumber = 3;
-    private string description_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string Description {
-      get { return description_; }
-      set {
-        description_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "Date" field.</summary>
-    public const int DateFieldNumber = 4;
-    private global::Google.Protobuf.WellKnownTypes.Timestamp date_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Google.Protobuf.WellKnownTypes.Timestamp Date {
-      get { return date_; }
-      set {
-        date_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "Price" field.</summary>
-    public const int PriceFieldNumber = 5;
-    private int price_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int Price {
-      get { return price_; }
-      set {
-        price_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "BookingStatus" field.</summary>
-    public const int BookingStatusFieldNumber = 6;
-    private string bookingStatus_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string BookingStatus {
-      get { return bookingStatus_; }
-      set {
-        bookingStatus_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "Category" field.</summary>
-    public const int CategoryFieldNumber = 7;
-    private string category_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string Category {
-      get { return category_; }
-      set {
-        category_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "LocationId" field.</summary>
-    public const int LocationIdFieldNumber = 8;
-    private string locationId_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string LocationId {
-      get { return locationId_; }
-      set {
-        locationId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "TotalTickets" field.</summary>
-    public const int TotalTicketsFieldNumber = 9;
-    private int totalTickets_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int TotalTickets {
-      get { return totalTickets_; }
-      set {
-        totalTickets_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "TicketsSold" field.</summary>
-    public const int TicketsSoldFieldNumber = 10;
-    private int ticketsSold_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int TicketsSold {
-      get { return ticketsSold_; }
-      set {
-        ticketsSold_ = value;
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override bool Equals(object other) {
-      return Equals(other as AddEventRequest);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(AddEventRequest other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (EventId != other.EventId) return false;
-      if (EventTitle != other.EventTitle) return false;
-      if (Description != other.Description) return false;
-      if (!object.Equals(Date, other.Date)) return false;
-      if (Price != other.Price) return false;
-      if (BookingStatus != other.BookingStatus) return false;
-      if (Category != other.Category) return false;
-      if (LocationId != other.LocationId) return false;
-      if (TotalTickets != other.TotalTickets) return false;
-      if (TicketsSold != other.TicketsSold) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (EventId.Length != 0) hash ^= EventId.GetHashCode();
-      if (EventTitle.Length != 0) hash ^= EventTitle.GetHashCode();
-      if (Description.Length != 0) hash ^= Description.GetHashCode();
-      if (date_ != null) hash ^= Date.GetHashCode();
-      if (Price != 0) hash ^= Price.GetHashCode();
-      if (BookingStatus.Length != 0) hash ^= BookingStatus.GetHashCode();
-      if (Category.Length != 0) hash ^= Category.GetHashCode();
-      if (LocationId.Length != 0) hash ^= LocationId.GetHashCode();
-      if (TotalTickets != 0) hash ^= TotalTickets.GetHashCode();
-      if (TicketsSold != 0) hash ^= TicketsSold.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      if (EventId.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(EventId);
-      }
-      if (EventTitle.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(EventTitle);
-      }
-      if (Description.Length != 0) {
-        output.WriteRawTag(26);
-        output.WriteString(Description);
-      }
-      if (date_ != null) {
-        output.WriteRawTag(34);
-        output.WriteMessage(Date);
-      }
-      if (Price != 0) {
-        output.WriteRawTag(40);
-        output.WriteInt32(Price);
-      }
-      if (BookingStatus.Length != 0) {
-        output.WriteRawTag(50);
-        output.WriteString(BookingStatus);
-      }
-      if (Category.Length != 0) {
-        output.WriteRawTag(58);
-        output.WriteString(Category);
-      }
-      if (LocationId.Length != 0) {
-        output.WriteRawTag(66);
-        output.WriteString(LocationId);
-      }
-      if (TotalTickets != 0) {
-        output.WriteRawTag(72);
-        output.WriteInt32(TotalTickets);
-      }
-      if (TicketsSold != 0) {
-        output.WriteRawTag(80);
-        output.WriteInt32(TicketsSold);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (EventId.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(EventId);
-      }
-      if (EventTitle.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(EventTitle);
-      }
-      if (Description.Length != 0) {
-        output.WriteRawTag(26);
-        output.WriteString(Description);
-      }
-      if (date_ != null) {
-        output.WriteRawTag(34);
-        output.WriteMessage(Date);
-      }
-      if (Price != 0) {
-        output.WriteRawTag(40);
-        output.WriteInt32(Price);
-      }
-      if (BookingStatus.Length != 0) {
-        output.WriteRawTag(50);
-        output.WriteString(BookingStatus);
-      }
-      if (Category.Length != 0) {
-        output.WriteRawTag(58);
-        output.WriteString(Category);
-      }
-      if (LocationId.Length != 0) {
-        output.WriteRawTag(66);
-        output.WriteString(LocationId);
-      }
-      if (TotalTickets != 0) {
-        output.WriteRawTag(72);
-        output.WriteInt32(TotalTickets);
-      }
-      if (TicketsSold != 0) {
-        output.WriteRawTag(80);
-        output.WriteInt32(TicketsSold);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int CalculateSize() {
-      int size = 0;
-      if (EventId.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(EventId);
-      }
-      if (EventTitle.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(EventTitle);
-      }
-      if (Description.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Description);
-      }
-      if (date_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Date);
-      }
-      if (Price != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Price);
-      }
-      if (BookingStatus.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(BookingStatus);
-      }
-      if (Category.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Category);
-      }
-      if (LocationId.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(LocationId);
-      }
-      if (TotalTickets != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(TotalTickets);
-      }
-      if (TicketsSold != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(TicketsSold);
-      }
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(AddEventRequest other) {
-      if (other == null) {
-        return;
-      }
-      if (other.EventId.Length != 0) {
-        EventId = other.EventId;
-      }
-      if (other.EventTitle.Length != 0) {
-        EventTitle = other.EventTitle;
-      }
-      if (other.Description.Length != 0) {
-        Description = other.Description;
-      }
-      if (other.date_ != null) {
-        if (date_ == null) {
-          Date = new global::Google.Protobuf.WellKnownTypes.Timestamp();
-        }
-        Date.MergeFrom(other.Date);
-      }
-      if (other.Price != 0) {
-        Price = other.Price;
-      }
-      if (other.BookingStatus.Length != 0) {
-        BookingStatus = other.BookingStatus;
-      }
-      if (other.Category.Length != 0) {
-        Category = other.Category;
-      }
-      if (other.LocationId.Length != 0) {
-        LocationId = other.LocationId;
-      }
-      if (other.TotalTickets != 0) {
-        TotalTickets = other.TotalTickets;
-      }
-      if (other.TicketsSold != 0) {
-        TicketsSold = other.TicketsSold;
-      }
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-      if ((tag & 7) == 4) {
-        // Abort on any end group tag.
-        return;
-      }
-      switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 10: {
-            EventId = input.ReadString();
-            break;
-          }
-          case 18: {
-            EventTitle = input.ReadString();
-            break;
-          }
-          case 26: {
-            Description = input.ReadString();
-            break;
-          }
-          case 34: {
-            if (date_ == null) {
-              Date = new global::Google.Protobuf.WellKnownTypes.Timestamp();
-            }
-            input.ReadMessage(Date);
-            break;
-          }
-          case 40: {
-            Price = input.ReadInt32();
-            break;
-          }
-          case 50: {
-            BookingStatus = input.ReadString();
-            break;
-          }
-          case 58: {
-            Category = input.ReadString();
-            break;
-          }
-          case 66: {
-            LocationId = input.ReadString();
-            break;
-          }
-          case 72: {
-            TotalTickets = input.ReadInt32();
-            break;
-          }
-          case 80: {
-            TicketsSold = input.ReadInt32();
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-      if ((tag & 7) == 4) {
-        // Abort on any end group tag.
-        return;
-      }
-      switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            EventId = input.ReadString();
-            break;
-          }
-          case 18: {
-            EventTitle = input.ReadString();
-            break;
-          }
-          case 26: {
-            Description = input.ReadString();
-            break;
-          }
-          case 34: {
-            if (date_ == null) {
-              Date = new global::Google.Protobuf.WellKnownTypes.Timestamp();
-            }
-            input.ReadMessage(Date);
-            break;
-          }
-          case 40: {
-            Price = input.ReadInt32();
-            break;
-          }
-          case 50: {
-            BookingStatus = input.ReadString();
-            break;
-          }
-          case 58: {
-            Category = input.ReadString();
-            break;
-          }
-          case 66: {
-            LocationId = input.ReadString();
-            break;
-          }
-          case 72: {
-            TotalTickets = input.ReadInt32();
-            break;
-          }
-          case 80: {
-            TicketsSold = input.ReadInt32();
             break;
           }
         }
@@ -1014,7 +475,7 @@ namespace EventServiceProvider {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::EventServiceProvider.EventReflection.Descriptor.MessageTypes[3]; }
+      get { return global::EventServiceProvider.EventReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1039,11 +500,11 @@ namespace EventServiceProvider {
       description_ = other.description_;
       date_ = other.date_ != null ? other.date_.Clone() : null;
       price_ = other.price_;
-      bookingStatus_ = other.bookingStatus_;
-      category_ = other.category_;
       locationId_ = other.locationId_;
       totalTickets_ = other.totalTickets_;
       ticketsSold_ = other.ticketsSold_;
+      status_ = other.status_ != null ? other.status_.Clone() : null;
+      category_ = other.category_ != null ? other.category_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1113,32 +574,8 @@ namespace EventServiceProvider {
       }
     }
 
-    /// <summary>Field number for the "BookingStatus" field.</summary>
-    public const int BookingStatusFieldNumber = 6;
-    private string bookingStatus_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string BookingStatus {
-      get { return bookingStatus_; }
-      set {
-        bookingStatus_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "Category" field.</summary>
-    public const int CategoryFieldNumber = 7;
-    private string category_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string Category {
-      get { return category_; }
-      set {
-        category_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
     /// <summary>Field number for the "LocationId" field.</summary>
-    public const int LocationIdFieldNumber = 8;
+    public const int LocationIdFieldNumber = 6;
     private string locationId_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1150,7 +587,7 @@ namespace EventServiceProvider {
     }
 
     /// <summary>Field number for the "TotalTickets" field.</summary>
-    public const int TotalTicketsFieldNumber = 9;
+    public const int TotalTicketsFieldNumber = 7;
     private int totalTickets_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1162,7 +599,7 @@ namespace EventServiceProvider {
     }
 
     /// <summary>Field number for the "TicketsSold" field.</summary>
-    public const int TicketsSoldFieldNumber = 10;
+    public const int TicketsSoldFieldNumber = 8;
     private int ticketsSold_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1170,6 +607,30 @@ namespace EventServiceProvider {
       get { return ticketsSold_; }
       set {
         ticketsSold_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "Status" field.</summary>
+    public const int StatusFieldNumber = 9;
+    private global::EventServiceProvider.Status status_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::EventServiceProvider.Status Status {
+      get { return status_; }
+      set {
+        status_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "Category" field.</summary>
+    public const int CategoryFieldNumber = 10;
+    private global::EventServiceProvider.Category category_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::EventServiceProvider.Category Category {
+      get { return category_; }
+      set {
+        category_ = value;
       }
     }
 
@@ -1193,11 +654,11 @@ namespace EventServiceProvider {
       if (Description != other.Description) return false;
       if (!object.Equals(Date, other.Date)) return false;
       if (Price != other.Price) return false;
-      if (BookingStatus != other.BookingStatus) return false;
-      if (Category != other.Category) return false;
       if (LocationId != other.LocationId) return false;
       if (TotalTickets != other.TotalTickets) return false;
       if (TicketsSold != other.TicketsSold) return false;
+      if (!object.Equals(Status, other.Status)) return false;
+      if (!object.Equals(Category, other.Category)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1210,11 +671,11 @@ namespace EventServiceProvider {
       if (Description.Length != 0) hash ^= Description.GetHashCode();
       if (date_ != null) hash ^= Date.GetHashCode();
       if (Price != 0) hash ^= Price.GetHashCode();
-      if (BookingStatus.Length != 0) hash ^= BookingStatus.GetHashCode();
-      if (Category.Length != 0) hash ^= Category.GetHashCode();
       if (LocationId.Length != 0) hash ^= LocationId.GetHashCode();
       if (TotalTickets != 0) hash ^= TotalTickets.GetHashCode();
       if (TicketsSold != 0) hash ^= TicketsSold.GetHashCode();
+      if (status_ != null) hash ^= Status.GetHashCode();
+      if (category_ != null) hash ^= Category.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1253,25 +714,25 @@ namespace EventServiceProvider {
         output.WriteRawTag(40);
         output.WriteInt32(Price);
       }
-      if (BookingStatus.Length != 0) {
-        output.WriteRawTag(50);
-        output.WriteString(BookingStatus);
-      }
-      if (Category.Length != 0) {
-        output.WriteRawTag(58);
-        output.WriteString(Category);
-      }
       if (LocationId.Length != 0) {
-        output.WriteRawTag(66);
+        output.WriteRawTag(50);
         output.WriteString(LocationId);
       }
       if (TotalTickets != 0) {
-        output.WriteRawTag(72);
+        output.WriteRawTag(56);
         output.WriteInt32(TotalTickets);
       }
       if (TicketsSold != 0) {
-        output.WriteRawTag(80);
+        output.WriteRawTag(64);
         output.WriteInt32(TicketsSold);
+      }
+      if (status_ != null) {
+        output.WriteRawTag(74);
+        output.WriteMessage(Status);
+      }
+      if (category_ != null) {
+        output.WriteRawTag(82);
+        output.WriteMessage(Category);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -1303,25 +764,25 @@ namespace EventServiceProvider {
         output.WriteRawTag(40);
         output.WriteInt32(Price);
       }
-      if (BookingStatus.Length != 0) {
-        output.WriteRawTag(50);
-        output.WriteString(BookingStatus);
-      }
-      if (Category.Length != 0) {
-        output.WriteRawTag(58);
-        output.WriteString(Category);
-      }
       if (LocationId.Length != 0) {
-        output.WriteRawTag(66);
+        output.WriteRawTag(50);
         output.WriteString(LocationId);
       }
       if (TotalTickets != 0) {
-        output.WriteRawTag(72);
+        output.WriteRawTag(56);
         output.WriteInt32(TotalTickets);
       }
       if (TicketsSold != 0) {
-        output.WriteRawTag(80);
+        output.WriteRawTag(64);
         output.WriteInt32(TicketsSold);
+      }
+      if (status_ != null) {
+        output.WriteRawTag(74);
+        output.WriteMessage(Status);
+      }
+      if (category_ != null) {
+        output.WriteRawTag(82);
+        output.WriteMessage(Category);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -1348,12 +809,6 @@ namespace EventServiceProvider {
       if (Price != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Price);
       }
-      if (BookingStatus.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(BookingStatus);
-      }
-      if (Category.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Category);
-      }
       if (LocationId.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(LocationId);
       }
@@ -1362,6 +817,12 @@ namespace EventServiceProvider {
       }
       if (TicketsSold != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(TicketsSold);
+      }
+      if (status_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Status);
+      }
+      if (category_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Category);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1393,12 +854,6 @@ namespace EventServiceProvider {
       if (other.Price != 0) {
         Price = other.Price;
       }
-      if (other.BookingStatus.Length != 0) {
-        BookingStatus = other.BookingStatus;
-      }
-      if (other.Category.Length != 0) {
-        Category = other.Category;
-      }
       if (other.LocationId.Length != 0) {
         LocationId = other.LocationId;
       }
@@ -1407,6 +862,18 @@ namespace EventServiceProvider {
       }
       if (other.TicketsSold != 0) {
         TicketsSold = other.TicketsSold;
+      }
+      if (other.status_ != null) {
+        if (status_ == null) {
+          Status = new global::EventServiceProvider.Status();
+        }
+        Status.MergeFrom(other.Status);
+      }
+      if (other.category_ != null) {
+        if (category_ == null) {
+          Category = new global::EventServiceProvider.Category();
+        }
+        Category.MergeFrom(other.Category);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -1451,23 +918,29 @@ namespace EventServiceProvider {
             break;
           }
           case 50: {
-            BookingStatus = input.ReadString();
-            break;
-          }
-          case 58: {
-            Category = input.ReadString();
-            break;
-          }
-          case 66: {
             LocationId = input.ReadString();
             break;
           }
-          case 72: {
+          case 56: {
             TotalTickets = input.ReadInt32();
             break;
           }
-          case 80: {
+          case 64: {
             TicketsSold = input.ReadInt32();
+            break;
+          }
+          case 74: {
+            if (status_ == null) {
+              Status = new global::EventServiceProvider.Status();
+            }
+            input.ReadMessage(Status);
+            break;
+          }
+          case 82: {
+            if (category_ == null) {
+              Category = new global::EventServiceProvider.Category();
+            }
+            input.ReadMessage(Category);
             break;
           }
         }
@@ -1513,23 +986,29 @@ namespace EventServiceProvider {
             break;
           }
           case 50: {
-            BookingStatus = input.ReadString();
-            break;
-          }
-          case 58: {
-            Category = input.ReadString();
-            break;
-          }
-          case 66: {
             LocationId = input.ReadString();
             break;
           }
-          case 72: {
+          case 56: {
             TotalTickets = input.ReadInt32();
             break;
           }
-          case 80: {
+          case 64: {
             TicketsSold = input.ReadInt32();
+            break;
+          }
+          case 74: {
+            if (status_ == null) {
+              Status = new global::EventServiceProvider.Status();
+            }
+            input.ReadMessage(Status);
+            break;
+          }
+          case 82: {
+            if (category_ == null) {
+              Category = new global::EventServiceProvider.Category();
+            }
+            input.ReadMessage(Category);
             break;
           }
         }
@@ -1540,16 +1019,251 @@ namespace EventServiceProvider {
   }
 
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
-  public sealed partial class GetEventsReply : pb::IMessage<GetEventsReply>
+  public sealed partial class Status : pb::IMessage<Status>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<GetEventsReply> _parser = new pb::MessageParser<GetEventsReply>(() => new GetEventsReply());
+    private static readonly pb::MessageParser<Status> _parser = new pb::MessageParser<Status>(() => new Status());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<GetEventsReply> Parser { get { return _parser; } }
+    public static pb::MessageParser<Status> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::EventServiceProvider.EventReflection.Descriptor.MessageTypes[3]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public Status() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public Status(Status other) : this() {
+      statusId_ = other.statusId_;
+      statusName_ = other.statusName_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public Status Clone() {
+      return new Status(this);
+    }
+
+    /// <summary>Field number for the "StatusId" field.</summary>
+    public const int StatusIdFieldNumber = 1;
+    private string statusId_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string StatusId {
+      get { return statusId_; }
+      set {
+        statusId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "StatusName" field.</summary>
+    public const int StatusNameFieldNumber = 2;
+    private string statusName_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string StatusName {
+      get { return statusName_; }
+      set {
+        statusName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as Status);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(Status other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (StatusId != other.StatusId) return false;
+      if (StatusName != other.StatusName) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (StatusId.Length != 0) hash ^= StatusId.GetHashCode();
+      if (StatusName.Length != 0) hash ^= StatusName.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (StatusId.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(StatusId);
+      }
+      if (StatusName.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(StatusName);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (StatusId.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(StatusId);
+      }
+      if (StatusName.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(StatusName);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (StatusId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(StatusId);
+      }
+      if (StatusName.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(StatusName);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(Status other) {
+      if (other == null) {
+        return;
+      }
+      if (other.StatusId.Length != 0) {
+        StatusId = other.StatusId;
+      }
+      if (other.StatusName.Length != 0) {
+        StatusName = other.StatusName;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            StatusId = input.ReadString();
+            break;
+          }
+          case 18: {
+            StatusName = input.ReadString();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            StatusId = input.ReadString();
+            break;
+          }
+          case 18: {
+            StatusName = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class Category : pb::IMessage<Category>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<Category> _parser = new pb::MessageParser<Category>(() => new Category());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<Category> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1565,7 +1279,7 @@ namespace EventServiceProvider {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public GetEventsReply() {
+    public Category() {
       OnConstruction();
     }
 
@@ -1573,18 +1287,253 @@ namespace EventServiceProvider {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public GetEventsReply(GetEventsReply other) : this() {
+    public Category(Category other) : this() {
+      categoryId_ = other.categoryId_;
+      categoryName_ = other.categoryName_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public Category Clone() {
+      return new Category(this);
+    }
+
+    /// <summary>Field number for the "CategoryId" field.</summary>
+    public const int CategoryIdFieldNumber = 1;
+    private string categoryId_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string CategoryId {
+      get { return categoryId_; }
+      set {
+        categoryId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "CategoryName" field.</summary>
+    public const int CategoryNameFieldNumber = 2;
+    private string categoryName_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string CategoryName {
+      get { return categoryName_; }
+      set {
+        categoryName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as Category);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(Category other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (CategoryId != other.CategoryId) return false;
+      if (CategoryName != other.CategoryName) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (CategoryId.Length != 0) hash ^= CategoryId.GetHashCode();
+      if (CategoryName.Length != 0) hash ^= CategoryName.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (CategoryId.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(CategoryId);
+      }
+      if (CategoryName.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(CategoryName);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (CategoryId.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(CategoryId);
+      }
+      if (CategoryName.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(CategoryName);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (CategoryId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(CategoryId);
+      }
+      if (CategoryName.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(CategoryName);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(Category other) {
+      if (other == null) {
+        return;
+      }
+      if (other.CategoryId.Length != 0) {
+        CategoryId = other.CategoryId;
+      }
+      if (other.CategoryName.Length != 0) {
+        CategoryName = other.CategoryName;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            CategoryId = input.ReadString();
+            break;
+          }
+          case 18: {
+            CategoryName = input.ReadString();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            CategoryId = input.ReadString();
+            break;
+          }
+          case 18: {
+            CategoryName = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class GetAllEventsReply : pb::IMessage<GetAllEventsReply>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<GetAllEventsReply> _parser = new pb::MessageParser<GetAllEventsReply>(() => new GetAllEventsReply());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<GetAllEventsReply> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::EventServiceProvider.EventReflection.Descriptor.MessageTypes[5]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetAllEventsReply() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetAllEventsReply(GetAllEventsReply other) : this() {
       events_ = other.events_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public GetEventsReply Clone() {
-      return new GetEventsReply(this);
+    public GetAllEventsReply Clone() {
+      return new GetAllEventsReply(this);
     }
 
-    /// <summary>Field number for the "events" field.</summary>
+    /// <summary>Field number for the "Events" field.</summary>
     public const int EventsFieldNumber = 1;
     private static readonly pb::FieldCodec<global::EventServiceProvider.Event> _repeated_events_codec
         = pb::FieldCodec.ForMessage(10, global::EventServiceProvider.Event.Parser);
@@ -1598,12 +1547,12 @@ namespace EventServiceProvider {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
-      return Equals(other as GetEventsReply);
+      return Equals(other as GetAllEventsReply);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(GetEventsReply other) {
+    public bool Equals(GetAllEventsReply other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -1668,7 +1617,7 @@ namespace EventServiceProvider {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(GetEventsReply other) {
+    public void MergeFrom(GetAllEventsReply other) {
       if (other == null) {
         return;
       }
@@ -1741,7 +1690,7 @@ namespace EventServiceProvider {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::EventServiceProvider.EventReflection.Descriptor.MessageTypes[5]; }
+      get { return global::EventServiceProvider.EventReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1761,7 +1710,8 @@ namespace EventServiceProvider {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GetEventReply(GetEventReply other) : this() {
-      events_ = other.events_ != null ? other.events_.Clone() : null;
+      statusCode_ = other.statusCode_;
+      event_ = other.event_ != null ? other.event_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1771,15 +1721,27 @@ namespace EventServiceProvider {
       return new GetEventReply(this);
     }
 
-    /// <summary>Field number for the "events" field.</summary>
-    public const int EventsFieldNumber = 1;
-    private global::EventServiceProvider.Event events_;
+    /// <summary>Field number for the "Status_code" field.</summary>
+    public const int StatusCodeFieldNumber = 1;
+    private int statusCode_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::EventServiceProvider.Event Events {
-      get { return events_; }
+    public int StatusCode {
+      get { return statusCode_; }
       set {
-        events_ = value;
+        statusCode_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "Event" field.</summary>
+    public const int EventFieldNumber = 2;
+    private global::EventServiceProvider.Event event_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::EventServiceProvider.Event Event {
+      get { return event_; }
+      set {
+        event_ = value;
       }
     }
 
@@ -1798,7 +1760,8 @@ namespace EventServiceProvider {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (!object.Equals(Events, other.Events)) return false;
+      if (StatusCode != other.StatusCode) return false;
+      if (!object.Equals(Event, other.Event)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1806,7 +1769,8 @@ namespace EventServiceProvider {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (events_ != null) hash ^= Events.GetHashCode();
+      if (StatusCode != 0) hash ^= StatusCode.GetHashCode();
+      if (event_ != null) hash ^= Event.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1825,9 +1789,13 @@ namespace EventServiceProvider {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (events_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(Events);
+      if (StatusCode != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(StatusCode);
+      }
+      if (event_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(Event);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -1839,9 +1807,13 @@ namespace EventServiceProvider {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (events_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(Events);
+      if (StatusCode != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(StatusCode);
+      }
+      if (event_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(Event);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -1853,8 +1825,11 @@ namespace EventServiceProvider {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (events_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Events);
+      if (StatusCode != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(StatusCode);
+      }
+      if (event_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Event);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1868,11 +1843,14 @@ namespace EventServiceProvider {
       if (other == null) {
         return;
       }
-      if (other.events_ != null) {
-        if (events_ == null) {
-          Events = new global::EventServiceProvider.Event();
+      if (other.StatusCode != 0) {
+        StatusCode = other.StatusCode;
+      }
+      if (other.event_ != null) {
+        if (event_ == null) {
+          Event = new global::EventServiceProvider.Event();
         }
-        Events.MergeFrom(other.Events);
+        Event.MergeFrom(other.Event);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -1893,11 +1871,15 @@ namespace EventServiceProvider {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 10: {
-            if (events_ == null) {
-              Events = new global::EventServiceProvider.Event();
+          case 8: {
+            StatusCode = input.ReadInt32();
+            break;
+          }
+          case 18: {
+            if (event_ == null) {
+              Event = new global::EventServiceProvider.Event();
             }
-            input.ReadMessage(Events);
+            input.ReadMessage(Event);
             break;
           }
         }
@@ -1919,11 +1901,15 @@ namespace EventServiceProvider {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
-          case 10: {
-            if (events_ == null) {
-              Events = new global::EventServiceProvider.Event();
+          case 8: {
+            StatusCode = input.ReadInt32();
+            break;
+          }
+          case 18: {
+            if (event_ == null) {
+              Event = new global::EventServiceProvider.Event();
             }
-            input.ReadMessage(Events);
+            input.ReadMessage(Event);
             break;
           }
         }
@@ -1934,21 +1920,21 @@ namespace EventServiceProvider {
   }
 
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
-  public sealed partial class AddEventReply : pb::IMessage<AddEventReply>
+  public sealed partial class EventReply : pb::IMessage<EventReply>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<AddEventReply> _parser = new pb::MessageParser<AddEventReply>(() => new AddEventReply());
+    private static readonly pb::MessageParser<EventReply> _parser = new pb::MessageParser<EventReply>(() => new EventReply());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<AddEventReply> Parser { get { return _parser; } }
+    public static pb::MessageParser<EventReply> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::EventServiceProvider.EventReflection.Descriptor.MessageTypes[6]; }
+      get { return global::EventServiceProvider.EventReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1959,7 +1945,7 @@ namespace EventServiceProvider {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public AddEventReply() {
+    public EventReply() {
       OnConstruction();
     }
 
@@ -1967,7 +1953,7 @@ namespace EventServiceProvider {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public AddEventReply(AddEventReply other) : this() {
+    public EventReply(EventReply other) : this() {
       statusCode_ = other.statusCode_;
       message_ = other.message_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -1975,11 +1961,11 @@ namespace EventServiceProvider {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public AddEventReply Clone() {
-      return new AddEventReply(this);
+    public EventReply Clone() {
+      return new EventReply(this);
     }
 
-    /// <summary>Field number for the "status_code" field.</summary>
+    /// <summary>Field number for the "Status_code" field.</summary>
     public const int StatusCodeFieldNumber = 1;
     private int statusCode_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1991,7 +1977,7 @@ namespace EventServiceProvider {
       }
     }
 
-    /// <summary>Field number for the "message" field.</summary>
+    /// <summary>Field number for the "Message" field.</summary>
     public const int MessageFieldNumber = 2;
     private string message_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2006,12 +1992,12 @@ namespace EventServiceProvider {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
-      return Equals(other as AddEventReply);
+      return Equals(other as EventReply);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(AddEventReply other) {
+    public bool Equals(EventReply other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -2097,7 +2083,7 @@ namespace EventServiceProvider {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(AddEventReply other) {
+    public void MergeFrom(EventReply other) {
       if (other == null) {
         return;
       }

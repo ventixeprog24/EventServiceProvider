@@ -1,13 +1,27 @@
 using EventServiceProvider.Data;
+using EventServiceProvider.Handlers;
+using EventServiceProvider.Repositories;
 using EventServiceProvider.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-builder.Services.AddGrpc();
 builder.Services.AddDbContext<EventDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("EventDb")));
+
+// Add services to the container.
+builder.Services.AddGrpc();
+builder.Services.AddMemoryCache();
+
+builder.Services.AddScoped(typeof(ICacheHandler<>), typeof(CacheHandler<>));
+
+builder.Services.AddScoped<IEventRepository, EventRepository>();
+
+//builder.Services.AddScoped<IEventService, EventService>();
+
+builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
+builder.Services.AddScoped<IStatusRepository, StatusRepository>();
+
 
 var app = builder.Build();
 

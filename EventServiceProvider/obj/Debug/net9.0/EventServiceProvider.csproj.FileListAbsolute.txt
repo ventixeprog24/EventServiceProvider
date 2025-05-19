@@ -151,6 +151,7 @@ C:\Users\adamr\code\Ventixe\EventServiceProvider\EventServiceProvider\obj\Debug\
 C:\Users\adamr\code\Ventixe\EventServiceProvider\EventServiceProvider\obj\Debug\net9.0\EventServiceProvider.AssemblyInfo.cs
 C:\Users\adamr\code\Ventixe\EventServiceProvider\EventServiceProvider\obj\Debug\net9.0\EventServiceProvider.csproj.CoreCompileInputs.cache
 C:\Users\adamr\code\Ventixe\EventServiceProvider\EventServiceProvider\obj\Debug\net9.0\EventServiceProvider.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\adamr\code\Ventixe\EventServiceProvider\EventServiceProvider\obj\Debug\net9.0\EventServiceProvider.sourcelink.json
 C:\Users\adamr\code\Ventixe\EventServiceProvider\EventServiceProvider\obj\Debug\net9.0\scopedcss\bundle\EventServiceProvider.styles.css
 C:\Users\adamr\code\Ventixe\EventServiceProvider\EventServiceProvider\obj\Debug\net9.0\staticwebassets.build.json
 C:\Users\adamr\code\Ventixe\EventServiceProvider\EventServiceProvider\obj\Debug\net9.0\staticwebassets.development.json
