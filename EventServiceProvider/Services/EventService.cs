@@ -24,30 +24,42 @@ public class EventService(IEventRepository eventRepository, ICacheHandler<IEnume
 
     public override async Task<GetAllEventsReply> GetEvents(Empty request, ServerCallContext context)
     {
-        var cachedEvents = _cacheHandler.GetFromCache(_cacheKey);
-        if (cachedEvents != null)
+        try
         {
-            var reply = new GetAllEventsReply();
-            reply.Events.AddRange(cachedEvents);
-            return reply;
+            var cachedEvents = _cacheHandler.GetFromCache(_cacheKey);
+            if (cachedEvents != null)
+            {
+                var reply = new GetAllEventsReply();
+                reply.Events.AddRange(cachedEvents);
+                return reply;
+            }
+
+
+            var freshReply = new GetAllEventsReply();
+            var eventEntities = await _eventRepository.GetAllAsync(
+                orderByDescending: false,
+                sortBy: x => x.Date,
+                filterBy: null,
+                i => i.Category,
+                i => i.BookingStatus
+                );
+
+            var events = eventEntities.Select(EventMapper.MapToGrpcEvent).ToList();
+            _cacheHandler.SetCache(_cacheKey, events);
+
+            freshReply.Events.AddRange(events);
+
+            return freshReply;
+
+        }
+        catch (Exception ex)
+        {
+            return new GetAllEventsReply
+            {
+                Exception = ex.Message,
+            };
         }
 
-
-        var freshReply = new GetAllEventsReply();
-        var eventEntities = await _eventRepository.GetAllAsync(
-            orderByDescending: false,
-            sortBy: x => x.Date,
-            filterBy: null,
-            i => i.Category,
-            i => i.BookingStatus
-            );
-
-        var events = eventEntities.Select(EventMapper.MapToGrpcEvent).ToList();
-        _cacheHandler.SetCache(_cacheKey, events);
-
-        freshReply.Events.AddRange(events);
-
-        return freshReply;
 
     }
     public override async Task<GetEventReply> GetEventById(GetEventByIdRequest request, ServerCallContext context)

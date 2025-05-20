@@ -4,6 +4,8 @@ option csharp_namespace = "EventServiceProvider";
 
 import "google/protobuf/timestamp.proto";
 import "google/protobuf/empty.proto";
+import "google/protobuf/wrappers.proto";
+
 
 package event;
 
@@ -13,6 +15,13 @@ service EventContract {
   rpc AddEvent (Event) returns (EventReply);
   rpc DeleteEvent (DeleteEventRequest) returns (EventReply);
   rpc UpdateEvent (Event) returns (EventReply);
+}
+
+service StatusContract{
+  rpc GetStatuses (google.protobuf.Empty) returns (GetAllStatusesReply);
+}
+service CategoryContract{
+  rpc GetCategories (google.protobuf.Empty) returns (GetAllCategoriesReply);
 }
 
 message GetEventByIdRequest {
@@ -46,13 +55,22 @@ message Category {
 }
 
 message GetAllEventsReply {
-  repeated Event Events = 1;
+  google.protobuf.StringValue Exception = 1;
+  repeated Event Events = 2;
 }
 message GetEventReply {
-   int32 Status_code = 1;
+  int32 Status_code = 1;
   Event Event = 2;
 }
 message EventReply {
   int32 Status_code = 1;
   string Message = 2;
+}
+
+message GetAllStatusesReply {
+  repeated Status Statuses = 1;
+}
+
+message GetAllCategoriesReply {
+  repeated Category Categories = 1;
 }
