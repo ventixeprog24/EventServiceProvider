@@ -14,7 +14,7 @@ public interface IBaseRepository<TEntity> where TEntity : class
     Task<TEntity?> GetAsync(Expression<Func<TEntity, bool>> findBy, params Expression<Func<TEntity, object?>>[] includes);
     Task<bool> UpdateAsync(TEntity entity);
 }
-
+ 
 public abstract class BaseRepository<TEntity> : IBaseRepository<TEntity> where TEntity : class
 {
     protected readonly EventDbContext _context;

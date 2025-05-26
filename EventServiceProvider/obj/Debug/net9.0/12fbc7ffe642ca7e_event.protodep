@@ -2,4 +2,5 @@ obj\Debug\net9.0\Protos/Event.cs \
 obj\Debug\net9.0\Protos/EventGrpc.cs: C:/Users/adamr/.nuget/packages/grpc.tools/2.72.0/build/native/include/google/protobuf/timestamp.proto\
  C:/Users/adamr/.nuget/packages/grpc.tools/2.72.0/build/native/include/google/protobuf/empty.proto\
  C:/Users/adamr/.nuget/packages/grpc.tools/2.72.0/build/native/include/google/protobuf/wrappers.proto\
+ Protos/location.proto\
  Protos/event.proto

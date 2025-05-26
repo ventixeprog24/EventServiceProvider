@@ -1,10 +1,10 @@
-﻿using Azure.Core;
-using EventServiceProvider.Factories;
+﻿using EventServiceProvider.Factories;
 using EventServiceProvider.Handlers;
 using EventServiceProvider.Mappers;
 using EventServiceProvider.Repositories;
 using Google.Protobuf.WellKnownTypes;
 using Grpc.Core;
+using static LocationServiceProvider.LocationServiceContract;
 namespace EventServiceProvider.Services;
 
 public interface IEventService
@@ -16,10 +16,11 @@ public interface IEventService
     Task<EventReply> UpdateEvent(Event request, ServerCallContext context);
 }
 
-public class EventService(IEventRepository eventRepository, ICacheHandler<IEnumerable<Event>> cacheHandler) : EventContract.EventContractBase, IEventService
+public class EventService(IEventRepository eventRepository, ICacheHandler<IEnumerable<Event>> cacheHandler, EventMapper eventMapper) : EventContract.EventContractBase, IEventService
 {
     private readonly IEventRepository _eventRepository = eventRepository;
     private readonly ICacheHandler<IEnumerable<Event>> _cacheHandler = cacheHandler;
+    private readonly EventMapper _eventMapper = eventMapper;
     private const string _cacheKey = "events";
 
     public override async Task<GetAllEventsReply> GetEvents(Empty request, ServerCallContext context)
@@ -30,6 +31,7 @@ public class EventService(IEventRepository eventRepository, ICacheHandler<IEnume
             if (cachedEvents != null)
             {
                 var reply = new GetAllEventsReply();
+
                 reply.Events.AddRange(cachedEvents);
                 return reply;
             }
@@ -44,7 +46,7 @@ public class EventService(IEventRepository eventRepository, ICacheHandler<IEnume
                 i => i.BookingStatus
                 );
 
-            var events = eventEntities.Select(EventMapper.MapToGrpcEvent).ToList();
+            var events = await Task.WhenAll(eventEntities.Select(e => _eventMapper.MapToGrpcEvent(e)));
             _cacheHandler.SetCache(_cacheKey, events);
 
             freshReply.Events.AddRange(events);
@@ -86,10 +88,11 @@ public class EventService(IEventRepository eventRepository, ICacheHandler<IEnume
             );
         if (eventEntity != null)
         {
+            var grpcEvent = await _eventMapper.MapToGrpcEvent(eventEntity);
             return new GetEventReply
             {
                 StatusCode = 200,
-                Event = EventMapper.MapToGrpcEvent(eventEntity)
+                Event = grpcEvent
             };
         }
         return new GetEventReply
@@ -192,9 +195,9 @@ public class EventService(IEventRepository eventRepository, ICacheHandler<IEnume
             sortBy: x => x.Date,
             filterBy: null,
             i => i.Category,
-            i => i.BookingStatus            
+            i => i.BookingStatus
             );
-        var models = events.Select(EventMapper.MapToGrpcEvent).ToList();
+        var models = await Task.WhenAll(events.Select(e => _eventMapper.MapToGrpcEvent(e)));
         _cacheHandler.SetCache(_cacheKey, models);
         return models;
     }

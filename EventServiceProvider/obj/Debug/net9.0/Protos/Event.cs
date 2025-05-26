@@ -26,42 +26,43 @@ namespace EventServiceProvider {
           string.Concat(
             "ChJQcm90b3MvZXZlbnQucHJvdG8SBWV2ZW50Gh9nb29nbGUvcHJvdG9idWYv",
             "dGltZXN0YW1wLnByb3RvGhtnb29nbGUvcHJvdG9idWYvZW1wdHkucHJvdG8a",
-            "Hmdvb2dsZS9wcm90b2J1Zi93cmFwcGVycy5wcm90byImChNHZXRFdmVudEJ5",
-            "SWRSZXF1ZXN0Eg8KB0V2ZW50SWQYASABKAkiJQoSRGVsZXRlRXZlbnRSZXF1",
-            "ZXN0Eg8KB0V2ZW50SWQYASABKAki+wEKBUV2ZW50Eg8KB0V2ZW50SWQYASAB",
-            "KAkSEgoKRXZlbnRUaXRsZRgCIAEoCRITCgtEZXNjcmlwdGlvbhgDIAEoCRIo",
-            "CgREYXRlGAQgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBINCgVQ",
-            "cmljZRgFIAEoBRISCgpMb2NhdGlvbklkGAYgASgJEhQKDFRvdGFsVGlja2V0",
-            "cxgHIAEoBRITCgtUaWNrZXRzU29sZBgIIAEoBRIdCgZTdGF0dXMYCSABKAsy",
-            "DS5ldmVudC5TdGF0dXMSIQoIQ2F0ZWdvcnkYCiABKAsyDy5ldmVudC5DYXRl",
-            "Z29yeSIuCgZTdGF0dXMSEAoIU3RhdHVzSWQYASABKAkSEgoKU3RhdHVzTmFt",
-            "ZRgCIAEoCSI0CghDYXRlZ29yeRISCgpDYXRlZ29yeUlkGAEgASgJEhQKDENh",
-            "dGVnb3J5TmFtZRgCIAEoCSJiChFHZXRBbGxFdmVudHNSZXBseRIvCglFeGNl",
-            "cHRpb24YASABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSHAoG",
-            "RXZlbnRzGAIgAygLMgwuZXZlbnQuRXZlbnQiQQoNR2V0RXZlbnRSZXBseRIT",
-            "CgtTdGF0dXNfY29kZRgBIAEoBRIbCgVFdmVudBgCIAEoCzIMLmV2ZW50LkV2",
-            "ZW50IjIKCkV2ZW50UmVwbHkSEwoLU3RhdHVzX2NvZGUYASABKAUSDwoHTWVz",
-            "c2FnZRgCIAEoCSI2ChNHZXRBbGxTdGF0dXNlc1JlcGx5Eh8KCFN0YXR1c2Vz",
-            "GAEgAygLMg0uZXZlbnQuU3RhdHVzIjwKFUdldEFsbENhdGVnb3JpZXNSZXBs",
-            "eRIjCgpDYXRlZ29yaWVzGAEgAygLMg8uZXZlbnQuQ2F0ZWdvcnkyqgIKDUV2",
-            "ZW50Q29udHJhY3QSPQoJR2V0RXZlbnRzEhYuZ29vZ2xlLnByb3RvYnVmLkVt",
-            "cHR5GhguZXZlbnQuR2V0QWxsRXZlbnRzUmVwbHkSQAoMR2V0RXZlbnRCeUlk",
-            "EhouZXZlbnQuR2V0RXZlbnRCeUlkUmVxdWVzdBoULmV2ZW50LkdldEV2ZW50",
-            "UmVwbHkSKwoIQWRkRXZlbnQSDC5ldmVudC5FdmVudBoRLmV2ZW50LkV2ZW50",
-            "UmVwbHkSOwoLRGVsZXRlRXZlbnQSGS5ldmVudC5EZWxldGVFdmVudFJlcXVl",
-            "c3QaES5ldmVudC5FdmVudFJlcGx5Ei4KC1VwZGF0ZUV2ZW50EgwuZXZlbnQu",
-            "RXZlbnQaES5ldmVudC5FdmVudFJlcGx5MlMKDlN0YXR1c0NvbnRyYWN0EkEK",
-            "C0dldFN0YXR1c2VzEhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5GhouZXZlbnQu",
-            "R2V0QWxsU3RhdHVzZXNSZXBseTJZChBDYXRlZ29yeUNvbnRyYWN0EkUKDUdl",
-            "dENhdGVnb3JpZXMSFi5nb29nbGUucHJvdG9idWYuRW1wdHkaHC5ldmVudC5H",
-            "ZXRBbGxDYXRlZ29yaWVzUmVwbHlCF6oCFEV2ZW50U2VydmljZVByb3ZpZGVy",
-            "YgZwcm90bzM="));
+            "Hmdvb2dsZS9wcm90b2J1Zi93cmFwcGVycy5wcm90bxoVUHJvdG9zL2xvY2F0",
+            "aW9uLnByb3RvIiYKE0dldEV2ZW50QnlJZFJlcXVlc3QSDwoHRXZlbnRJZBgB",
+            "IAEoCSIlChJEZWxldGVFdmVudFJlcXVlc3QSDwoHRXZlbnRJZBgBIAEoCSKh",
+            "AgoFRXZlbnQSDwoHRXZlbnRJZBgBIAEoCRISCgpFdmVudFRpdGxlGAIgASgJ",
+            "EhMKC0Rlc2NyaXB0aW9uGAMgASgJEigKBERhdGUYBCABKAsyGi5nb29nbGUu",
+            "cHJvdG9idWYuVGltZXN0YW1wEg0KBVByaWNlGAUgASgFEhIKCkxvY2F0aW9u",
+            "SWQYBiABKAkSFAoMVG90YWxUaWNrZXRzGAcgASgFEhMKC1RpY2tldHNTb2xk",
+            "GAggASgFEh0KBlN0YXR1cxgJIAEoCzINLmV2ZW50LlN0YXR1cxIhCghDYXRl",
+            "Z29yeRgKIAEoCzIPLmV2ZW50LkNhdGVnb3J5EiQKCExvY2F0aW9uGAsgASgL",
+            "MhIubG9jYXRpb24uTG9jYXRpb24iLgoGU3RhdHVzEhAKCFN0YXR1c0lkGAEg",
+            "ASgJEhIKClN0YXR1c05hbWUYAiABKAkiNAoIQ2F0ZWdvcnkSEgoKQ2F0ZWdv",
+            "cnlJZBgBIAEoCRIUCgxDYXRlZ29yeU5hbWUYAiABKAkiYgoRR2V0QWxsRXZl",
+            "bnRzUmVwbHkSLwoJRXhjZXB0aW9uGAEgASgLMhwuZ29vZ2xlLnByb3RvYnVm",
+            "LlN0cmluZ1ZhbHVlEhwKBkV2ZW50cxgCIAMoCzIMLmV2ZW50LkV2ZW50IkEK",
+            "DUdldEV2ZW50UmVwbHkSEwoLU3RhdHVzX2NvZGUYASABKAUSGwoFRXZlbnQY",
+            "AiABKAsyDC5ldmVudC5FdmVudCIyCgpFdmVudFJlcGx5EhMKC1N0YXR1c19j",
+            "b2RlGAEgASgFEg8KB01lc3NhZ2UYAiABKAkiNgoTR2V0QWxsU3RhdHVzZXNS",
+            "ZXBseRIfCghTdGF0dXNlcxgBIAMoCzINLmV2ZW50LlN0YXR1cyI8ChVHZXRB",
+            "bGxDYXRlZ29yaWVzUmVwbHkSIwoKQ2F0ZWdvcmllcxgBIAMoCzIPLmV2ZW50",
+            "LkNhdGVnb3J5MqoCCg1FdmVudENvbnRyYWN0Ej0KCUdldEV2ZW50cxIWLmdv",
+            "b2dsZS5wcm90b2J1Zi5FbXB0eRoYLmV2ZW50LkdldEFsbEV2ZW50c1JlcGx5",
+            "EkAKDEdldEV2ZW50QnlJZBIaLmV2ZW50LkdldEV2ZW50QnlJZFJlcXVlc3Qa",
+            "FC5ldmVudC5HZXRFdmVudFJlcGx5EisKCEFkZEV2ZW50EgwuZXZlbnQuRXZl",
+            "bnQaES5ldmVudC5FdmVudFJlcGx5EjsKC0RlbGV0ZUV2ZW50EhkuZXZlbnQu",
+            "RGVsZXRlRXZlbnRSZXF1ZXN0GhEuZXZlbnQuRXZlbnRSZXBseRIuCgtVcGRh",
+            "dGVFdmVudBIMLmV2ZW50LkV2ZW50GhEuZXZlbnQuRXZlbnRSZXBseTJTCg5T",
+            "dGF0dXNDb250cmFjdBJBCgtHZXRTdGF0dXNlcxIWLmdvb2dsZS5wcm90b2J1",
+            "Zi5FbXB0eRoaLmV2ZW50LkdldEFsbFN0YXR1c2VzUmVwbHkyWQoQQ2F0ZWdv",
+            "cnlDb250cmFjdBJFCg1HZXRDYXRlZ29yaWVzEhYuZ29vZ2xlLnByb3RvYnVm",
+            "LkVtcHR5GhwuZXZlbnQuR2V0QWxsQ2F0ZWdvcmllc1JlcGx5QheqAhRFdmVu",
+            "dFNlcnZpY2VQcm92aWRlcmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::LocationServiceProvider.LocationReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::EventServiceProvider.GetEventByIdRequest), global::EventServiceProvider.GetEventByIdRequest.Parser, new[]{ "EventId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::EventServiceProvider.DeleteEventRequest), global::EventServiceProvider.DeleteEventRequest.Parser, new[]{ "EventId" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::EventServiceProvider.Event), global::EventServiceProvider.Event.Parser, new[]{ "EventId", "EventTitle", "Description", "Date", "Price", "LocationId", "TotalTickets", "TicketsSold", "Status", "Category" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::EventServiceProvider.Event), global::EventServiceProvider.Event.Parser, new[]{ "EventId", "EventTitle", "Description", "Date", "Price", "LocationId", "TotalTickets", "TicketsSold", "Status", "Category", "Location" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::EventServiceProvider.Status), global::EventServiceProvider.Status.Parser, new[]{ "StatusId", "StatusName" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::EventServiceProvider.Category), global::EventServiceProvider.Category.Parser, new[]{ "CategoryId", "CategoryName" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::EventServiceProvider.GetAllEventsReply), global::EventServiceProvider.GetAllEventsReply.Parser, new[]{ "Exception", "Events" }, null, null, null, null),
@@ -516,6 +517,7 @@ namespace EventServiceProvider {
       ticketsSold_ = other.ticketsSold_;
       status_ = other.status_ != null ? other.status_.Clone() : null;
       category_ = other.category_ != null ? other.category_.Clone() : null;
+      location_ = other.location_ != null ? other.location_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -645,6 +647,18 @@ namespace EventServiceProvider {
       }
     }
 
+    /// <summary>Field number for the "Location" field.</summary>
+    public const int LocationFieldNumber = 11;
+    private global::LocationServiceProvider.Location location_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::LocationServiceProvider.Location Location {
+      get { return location_; }
+      set {
+        location_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -670,6 +684,7 @@ namespace EventServiceProvider {
       if (TicketsSold != other.TicketsSold) return false;
       if (!object.Equals(Status, other.Status)) return false;
       if (!object.Equals(Category, other.Category)) return false;
+      if (!object.Equals(Location, other.Location)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -687,6 +702,7 @@ namespace EventServiceProvider {
       if (TicketsSold != 0) hash ^= TicketsSold.GetHashCode();
       if (status_ != null) hash ^= Status.GetHashCode();
       if (category_ != null) hash ^= Category.GetHashCode();
+      if (location_ != null) hash ^= Location.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -745,6 +761,10 @@ namespace EventServiceProvider {
         output.WriteRawTag(82);
         output.WriteMessage(Category);
       }
+      if (location_ != null) {
+        output.WriteRawTag(90);
+        output.WriteMessage(Location);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -795,6 +815,10 @@ namespace EventServiceProvider {
         output.WriteRawTag(82);
         output.WriteMessage(Category);
       }
+      if (location_ != null) {
+        output.WriteRawTag(90);
+        output.WriteMessage(Location);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -834,6 +858,9 @@ namespace EventServiceProvider {
       }
       if (category_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Category);
+      }
+      if (location_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Location);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -885,6 +912,12 @@ namespace EventServiceProvider {
           Category = new global::EventServiceProvider.Category();
         }
         Category.MergeFrom(other.Category);
+      }
+      if (other.location_ != null) {
+        if (location_ == null) {
+          Location = new global::LocationServiceProvider.Location();
+        }
+        Location.MergeFrom(other.Location);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -954,6 +987,13 @@ namespace EventServiceProvider {
             input.ReadMessage(Category);
             break;
           }
+          case 90: {
+            if (location_ == null) {
+              Location = new global::LocationServiceProvider.Location();
+            }
+            input.ReadMessage(Location);
+            break;
+          }
         }
       }
     #endif
@@ -1020,6 +1060,13 @@ namespace EventServiceProvider {
               Category = new global::EventServiceProvider.Category();
             }
             input.ReadMessage(Category);
+            break;
+          }
+          case 90: {
+            if (location_ == null) {
+              Location = new global::LocationServiceProvider.Location();
+            }
+            input.ReadMessage(Location);
             break;
           }
         }

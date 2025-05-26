@@ -1,8 +1,11 @@
 using EventServiceProvider.Data;
 using EventServiceProvider.Handlers;
+using EventServiceProvider.Mappers;
 using EventServiceProvider.Repositories;
 using EventServiceProvider.Services;
 using Microsoft.EntityFrameworkCore;
+using LocationServiceContractClient = LocationServiceProvider.LocationServiceContract.LocationServiceContractClient;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,9 +19,15 @@ builder.Services.AddMemoryCache();
 builder.Services.AddScoped(typeof(ICacheHandler<>), typeof(CacheHandler<>));
 
 builder.Services.AddScoped<IEventRepository, EventRepository>();
-
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 builder.Services.AddScoped<IStatusRepository, StatusRepository>();
+builder.Services.AddScoped<EventMapper>();
+
+
+builder.Services.AddGrpcClient<LocationServiceContractClient>(o =>
+{
+    o.Address = new Uri(builder.Configuration["Grpc:LocationServiceProvider"]!);
+});
 
 //builder.Services.AddScoped<IStatusService, StatusService>();
 //builder.Services.AddScoped<ICategoryService, CategoryService>();
